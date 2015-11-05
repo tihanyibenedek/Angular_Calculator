@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<title>Calculator</title> <!-- Cím, ami megjelenik a böngésző fülön -->
+	<meta charset="UTF-8"> <!-- Karakter kódolás -->
+	<script src="D:\Bence\Code\Angular\angular.min.js"></script> <!-- Meghívja az Angular könyvtárat,FONTOS hogy elől legyen -->
+	<script type="text/javascript" src="app.js"></script> <!-- meghívja az app.js script filet -->
+	<link rel="stylesheet" type="text/css" href="app.css" /> <!-- meghívj a app.css css filet -->
+</head>
+<body ng-app="CalculatorApp"> <!-- Megadjuk az alkalmazás nevét az ng-app - direktíva -->
+	<p class="title"> <!-- Osztály nevet adunk, hogy később könyebben el lehessen érni a CSS-ben -->
+		<h1>CALCULATOR</h1>
+	</p>
+	<div ng-controller="AdditionController" ng-init="val1=0;val2=0"> <!-- meghívjuk az szükséges controllert az ng-controller - 	
+																	direktíva alkalmazásáva, ami az adott zártag ig lesz érvényes, 
+																	az ng-init - direktíva alkalmazásával megadjuk a változók kezdeti értékét-->
+		Összeadás:<br>
+		<input type="text" ng-model="val1" ><br>
+		<input type="text" ng-model="val2"><br>
+		<br>
+		Eredmény: 
+		<h3>
+			{{addition(val1,val2)}}
+		</h3>
+	</div>	
+	<div ng-controller="SubstractionController" ng-init="val1=0;val2=0"> 
+		Kivonás:<br>
+		<input type="text" ng-model="val1"><br>
+		<input type="text" ng-model="val2"><br>
+		<br>
+		Eredmény: 
+		<h3>
+			{{substraction(val1,val2)}}
+		</h3>
+	</div>	
+	<div ng-controller="MultiplicationController" ng-init="val1=0;val2=0"> 
+		Szorzás:<br>
+		<input type="text" ng-model="val1"><br>
+		<input type="text" ng-model="val2"><br>
+		<br>
+		Eredmény: 
+		<h3>
+			{{multiplication(val1,val2)}}
+		</h3>
+	</div>	
+	<div ng-controller="DivisionController" ng-init="val1=0;val2=0"> 
+		Osztás:<br>
+		<input type="text" ng-model="val1"><br>
+		<input type="text" ng-model="val2"><br>
+		<br>
+		Eredmény: 
+		<h3>
+			{{division(val1,val2)}}
+		</h3>
+	</div>	
+
+</body> 
+</html>  
