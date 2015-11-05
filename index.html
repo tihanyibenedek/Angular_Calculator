@@ -5,15 +5,17 @@
 	<script src="D:\Bence\Code\Angular\angular.min.js"></script> <!-- Meghívja az Angular könyvtárat,FONTOS hogy elől legyen -->
 	<script type="text/javascript" src="app.js"></script> <!-- meghívja az app.js script filet -->
 	<link rel="stylesheet" type="text/css" href="app.css" /> <!-- meghívj a app.css css filet -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body ng-app="CalculatorApp"> <!-- Megadjuk az alkalmazás nevét az ng-app - direktíva -->
 	<p class="title"> <!-- Osztály nevet adunk, hogy később könyebben el lehessen érni a CSS-ben -->
 		<h1>CALCULATOR</h1>
 	</p>
-	<div ng-controller="AdditionController" ng-init="val1=0;val2=0"> <!-- meghívjuk az szükséges controllert az ng-controller - 	
+	<!-- <div ng-controller="AdditionController" ng-init="val1=0;val2=0">--> <!-- meghívjuk az szükséges controllert az ng-controller - 	
 																	direktíva alkalmazásáva, ami az adott zártag ig lesz érvényes, 
 																	az ng-init - direktíva alkalmazásával megadjuk a változók kezdeti értékét-->
-		Összeadás:<br>
+		<!--Összeadás:<br>
 		<input type="text" ng-model="val1" ><br>
 		<input type="text" ng-model="val2"><br>
 		<br>
@@ -51,7 +53,33 @@
 		<h3>
 			{{division(val1,val2)}}
 		</h3>
-	</div>	
+	</div> -->	
+	<!--<div class="row">--> <!-- Ez egy példa a Grid-re! 12 rész van, melyeket fel lehet osztani -->
+		<!--<div class="col-sm-2" style="background-color:#FFFFFF;"></div>
+ 		<div class="col-sm-6" style="background-color:#FF0000;">
+ 			
+ 			<div class="col-sm-2" style="background-color:#003300;">
+
+ 				<div class="col-sm-1" style="background-color:#0000FF;">1</div>
+ 				<div class="col-sm-1" style="background-color:#FFFF00;">2</div>
+ 				<div class="col-sm-1" style="background-color:#00FFFF;">3</div>
+ 				<div class="col-sm-1" style="background-color:#FF00FF;">4</div>
+ 				<div class="col-sm-1" style="background-color:#C0C0C0;">5</div>
+ 				<div class="col-sm-1" style="background-color:#00FF00;">6</div>
+
+ 			</div>
+ 			<div class="col-sm-2" style="background-color:#003333;">f2</div>
+ 			<div class="col-sm-2" style="background-color:#003366;">F3</div>
+ 			<div class="col-sm-2" style="background-color:#003399;">F1</div>
+ 			<div class="col-sm-2" style="background-color:#0033CC;">f2</div>
+ 			<div class="col-sm-2" style="background-color:#0033FF;">F3</div>
+
+ 		</div>
+  		<div class="col-sm-2" style="background-color:#FFFFFF;"></div>
+	</div>-->
+
+	
+
 
 </body> 
 </html>  
