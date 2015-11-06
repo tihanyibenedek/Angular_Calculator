@@ -9,14 +9,29 @@
   text-align: center;
 }*/
 
-.NumberButton{
+.NumberButton {
 	display: block;            
   	width: 100%;
-  	padding-top:40%;
+  	/*padding-top:10%;*/
   	margin: 10px;
   	text-align: center;
   	vertical-align: middle;
   	font-size: 40px;
+}
+
+.FunctionButton {
+	display: block;            
+  	width: 100%;
+  	padding-top:20%;
+  	margin: 10px;
+  	text-align: center;
+  	font-size: 40px;
+}
+
+.EqualButton {
+	width: 100%;
+	padding-top:5%;
+	margin: 10px;
 }
 
 #top {
