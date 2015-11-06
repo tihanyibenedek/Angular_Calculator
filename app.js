@@ -46,8 +46,8 @@ CalculatorApp.controller('DivisionController', function ($scope) {
 
 });
 
-CalculatorApp.controller('ClickButtonController', function (;$scope) {
-	
+CalculatorApp.controller('ClickButtonController', function ($scope) {
+
 });
 
 
